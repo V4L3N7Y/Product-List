@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.title{
+    
+    font-size: xxx-large;
+    font-weight:bold;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+///buttons position was made by mistake ..kinda like it 
+
+.button-add {
+  left: 80%;
+  top: auto;
+  align-items: center;
+  background-color: #ffffff1c;
+  border: 1px solid rgba(0, 60, 255, 0.103);
+  border-radius: .25rem;
+  box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  box-sizing: border-box;
+  color: rgba(0, 0, 0, 0.85);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 1.25;
+  //margin: 0;
+  min-height: 3rem;
+  padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+  position: relative;
+  text-decoration: none;
+  transition: all 250ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  width: auto;
+}
+
+.button-add:hover,
+.button-add:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.button-add:hover {
+  transform: translateY(-1px);
+  background-color: rgb(255, 255, 255);
+}
+
+.button-add:active {
+  background-color: #367df0;
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+  color: rgba(0, 0, 0, 0.65);
+  transform: translateY(0);
+}
+
+
+.button-delete {
+    left: 80%;
+    top: auto;
+    align-items: center;
+    background-color: #ffffff13;
+    border: 1px solid rgba(255, 0, 0, 0.1);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    //margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+  .button-delete:hover,
+  .button-delete:focus {
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+    color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .button-delete:hover {
+    transform: translateY(-1px);
+    
+  }
+  
+  .button-delete:active {
+    background-color: red;
+    border-color: rgba(0, 0, 0, 0.15);
+    box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+    color: rgba(0, 0, 0, 0.65);
+    transform: translateY(0);
+  }
+
+
+.a{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.test{
+
+  border-style: solid;
+  border-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0)) 1;
+  width: 80%;
+  position:absolute;
+  padding-top: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+.checkbox{
+
+  position: relative;
+  left: 80%;
+}
+
+
+.box{
+    
+    border: 3px solid rgba(0, 0, 0, 0.342); 
+    border-radius: 20px;
+    border-top: solid 10px rgba(0, 0, 0, 0.144);
+    letter-spacing: 1px;
+    width: 10rem;
+    height: 10rem;
+    padding: 20px 20px 20px; 
+    table-layout: fixed;
+    border-left: none;
+    border-bottom: none;
+    width: 100%;
+    box-shadow: rgba(100, 100, 111, 0.205) 8px 5px 30px 0px;
+    
+      
+}
+
+.test2{
+ 
+  border-radius: 1em;
+  padding: 1em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  grid-template-columns: 150px 150px 150px 
+                         150px 150px 150px;
+  display: grid;
+}
+
+@media (max-width:700px){
+
+  .title{
+    
+    font-size: xx-large;
+    font-weight:bold;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+  }
+
+
+  .test{
+
+    border-width: 2px;
+    border-style: solid;
+    border-image: linear-gradient(to right, rgb(29, 29, 29), rgba(0, 0, 0, 0)) 1;
+    width: 75%;
+    position:absolute;
+    padding-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    box-shadow: rgba(0, 0, 0, 0.13) 4px 5px 10px;
+  }
+
+  .button-delete{
+   
+    display:none;
+  }
+
+  .button-add{
+
+    display: none;
+  }
+
+}
+
+.delete
+      {
+  
+    position: relative;
+    top: -15%;
+    left:15%;
+    background-color: #ff0000;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 5px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    margin: 2px 2px;
+    cursor: pointer;
+  
+}

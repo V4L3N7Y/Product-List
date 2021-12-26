@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Damion|Muli:400,600');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+body{
+
+    background-image: url('https://cutewallpaper.org/21/white-background-hd/Lukas-Minimalist-Technology-Background-White-Hd-.jpg');
+
+}
+
+
+.title{
+    
+    font-size: xxx-large;
+    font-weight:bold;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+}
+
+
+
+
+  
+  .input_position {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    height: 350px;
+    padding: 200px;
+    width: 320px;
+  }
+
+.submit {
+    padding: 3rem;
+}
+
+.weight-style {
+
+    padding-left: 5rem;
+}
+
+
+.header{
+
+
+    border: 3.8px solid;
+    border-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0)) 1;
+    width: 80%;
+    position:absolute;
+    padding-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+      
+}
+  
+
+.button-add {
+    left: 80%;
+    top: auto;
+    align-items: center;
+    background-color: #ffffff1c;
+    border: 1px solid rgba(0, 60, 255, 0.103);
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, 0.85);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    justify-content: center;
+    line-height: 1.25;
+    //margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+  }
+  
+
+.button-add:hover,
+.button-add:focus {
+  border-color: rgba(0, 0, 0, 0.15);
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+  color: rgba(0, 0, 0, 0.65);
+}
