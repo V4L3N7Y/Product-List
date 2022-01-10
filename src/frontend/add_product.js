@@ -2,7 +2,10 @@ import axios from 'axios';
 import {withRouter} from 'react-router-dom';
 import '../scss_files/add_product_style.scss';
 import '../scss_files/error_popup.scss';
+import '../scss_files/input_style.scss';
+import '../scss_files/responsive_product_list.scss';
 import React, { Component } from 'react';
+
 
 const defaultState = {
 
@@ -130,42 +133,40 @@ onSubmit(e) {
             
       
           case '1':
-            return  <form className = 'weight-style'>
-                    <label for="fname">Weight</label>
-                    <input type="text" name="book"
+            return  <form>  
+                    <input type="text" className='inputs' placeholder="Weight" name="book"
                     value = {this.state.book}
                     onChange={this.onChangeAttribute}></input>
-                    </form>
+                    </form>;
         
       
           case '2':
             return  <form>
-                    <label for="fname">Size(MB)</label>
-                    <input type="text" name="size"
+                    <input className='inputs' placeholder="Size(MB)"  type="text" name="size"
                     value = {this.state.size}  
                     onChange={this.onChangeAttribute}></input>
                     </form>;
       
           case '3':
-            return  <form >
-                    <label for="height">Height</label>
-                    <input name="height" 
+            return  <div >
+                    
+                    <input className='inputs' placeholder="Height" name="height" 
                     value = {this.state.height}
                     onChange={this.onChangeAttribute}
-                    />
+                    /><br/>
       
-                    <label for="width">Width</label>
-                    <input name="width"
+                   
+                    <input className='inputs' placeholder="Width" name="width"
                     value = {this.state.width}
                     onChange={this.onChangeAttribute} 
-                    />
+                    /><br/>
       
-                    <label for="length">Length</label>
-                    <input name="length" 
+                    
+                    <input className='inputs' placeholder="Length" name="length" 
                     value = {this.state.length}
                     onChange={this.onChangeAttribute}
                     />
-                  </form>;
+                  </div>;
             
           default:
             return null;           
@@ -184,37 +185,37 @@ onSubmit(e) {
     return (
         <div>
           <button class="button-add" role="button" onClick={this.onSubmit}>SAVE</button>
-                <button class="button-delete" role="button" onClick={() => this.nextPath('/product_list') }>CANCEL</button>
+                <button class="button-delete" role="button" onClick={() => this.setState(defaultState) }>CANCEL</button>
+                <a class= "a_style" onClick={() => this.nextPath('/product_list')}>Go to Product List</a>
           <div className = 'header'></div>
           <h1 className="title">Add Product</h1>
 
-          <div className = 'input_position'>
+          <div className = 'input_position'> 
           
-
-                    <label>SKU</label>
-                    <input name = "sku" value = {this.state.sku}
-                    onChange={this.onChangeAttribute}/>
-                    <small style={{color: "red"}}>{this.state.skuError}</small>
+                    
+                    <input className="Sku" placeholder="Sku" name = "sku" value = {this.state.sku}
+                    onChange={this.onChangeAttribute}/><br/>
+                    <small className='error_sku' style={{color: "red"}}>{this.state.skuError}</small><br/>
 
                     
-                     <label>Name</label>
-                    <input name = "name" value = {this.state.name}
+                     
+                    <input className="Name" placeholder="Name" name = "name" value = {this.state.name}
                     onChange={this.onChangeAttribute}/><br/>
-                    <small style={{color: "red"}}>{this.state.nameError}</small>
+                    <small className='error_name' style={{color: "red"}}>{this.state.nameError}</small><br/>
 
-                    <label>Price</label>
-                    <input name = "price" value = {this.state.price}
+                    
+                    <input className="Price" placeholder="Price" name = "price" value = {this.state.price}
                     onChange={this.onChangeAttribute}/><br/>
-                    <small style={{color: "red"}}>{this.state.priceError}</small> 
+                    <small className='error_price' style={{color: "red"}}>{this.state.priceError}</small>
 
         <form >
-           <select name="type"  value={this.state.type} onChange={this.handleChange}>
+           <select className="select" name="type"  value={this.state.type} onChange={this.handleChange}><br/>
                <option value="" selected="selected">Type</option>
                <option value="1">Book</option>
                <option value="2">DVD</option>
                <option value="3">Furniture</option>
            </select><br/>
-           <small style={{color: "red"}}>{this.state.typeError}</small>
+           <small className='error_type' style={{color: "red"}}>{this.state.typeError}</small>
            
         </form>
         {this.renderSelectedForm(this.state.type)}
@@ -223,7 +224,7 @@ onSubmit(e) {
 
         </div>
         
-    </div>
+        </div>
 
     )
 }

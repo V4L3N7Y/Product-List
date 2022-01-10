@@ -1,9 +1,10 @@
 import axios from 'axios';
 import '../scss_files/product_list_style.scss';
+import '../scss_files/responsive_product_list.scss';
 import React,{ useRef } from 'react';
 import {withRouter} from 'react-router-dom';
 import { Component } from 'react';
-import $ from 'jquery';
+//import '../scss_files/input_style.scss';
 import RecordList,{validate}  from './List';
 
  class product_list extends Component {
@@ -50,7 +51,7 @@ import RecordList,{validate}  from './List';
     }
 
     click() {
-        axios.get('http://localhost/scandiweb-test/src/backend/test.php')
+        axios.get('http://localhost/scandiweb-test/src/backend/mass_delete.php')
         .then(console.log('Mass Deleted'))
         .catch(err => console.log(err))
     }
@@ -58,7 +59,7 @@ import RecordList,{validate}  from './List';
     render() {
     
         return (
-            <div>
+            <div className='body_style'>
 
                 <h3 className = 'title'>Product List</h3>
             
@@ -76,7 +77,6 @@ import RecordList,{validate}  from './List';
 
                     </tbody>
                 </table>                 
-            
             </div>
         )
     }

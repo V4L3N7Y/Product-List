@@ -1,0 +1,210 @@
+
+
+@media only screen and (max-width:700px){
+
+    .test {
+  
+      display: none;
+    }
+
+    body{
+    background-image: url('https://i.pinimg.com/originals/e0/77/ee/e077eec5651d294de5ffd25b340f9e13.jpg');
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+    .footer {
+     
+      position: absolute;
+      text-align: center;
+      padding: 15px;
+      bottom: 0;
+      width: 100%;
+      height: 50px;
+      background: #b9b9b9;
+      border-radius: none;
+      
+    }
+  
+    .title{
+      
+      transform: translate(-50%, -50%);
+      font-size: xx-large;
+      font-weight:bold;
+      position: relative;
+      top: 50%;
+      left: 50%;
+    }
+  
+    .table-page {
+   
+      top: 50%;
+      left: 50%;
+      transform: translate(-50% , -50%);
+      position: fixed;
+      background-color: rgb(255, 255, 255);
+      width: 100%;
+      height: 70%;
+      overflow: auto;
+      border-radius: 0px;
+     
+    }
+    
+    .test2{
+     
+     // border-radius: 1em;
+      padding: 1em;
+      position: absolute;
+     // top: 10rem;
+     // left: 50%;
+    //  margin-right: -50%;
+     // transform: translate(-50%, -50%);
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+      grid-template-columns: 150px 150px;
+      display: grid;
+      grid-gap: 18px;
+      justify-content: space-evenly;
+    }
+  
+  
+  
+  
+    .button-delete{
+     
+      display:none;
+    }
+  
+    .button-add{
+  
+      display: none;
+  
+  
+    }
+  
+   
+  
+  /* CSS */
+   .button-delete {
+    transform: translate(-50%, -50%);
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #cf2c2c;
+    border-radius: 0px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 5% 16%;
+    flex:1;
+    position: relative;
+    left: -0%;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-delete:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .button-delete:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .button-delete:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  }
+  
+  
+  
+  /* add_button */
+  .button-add {
+    transform: translate(-50%, -50%);
+    appearance: none;
+    backface-visibility: hidden;
+    background-color: #27ae60;
+    border-radius: 0px;
+    border-style: none;
+    box-shadow: rgba(39, 174, 96, .15) 0 4px 9px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Inter,-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: normal;
+    line-height: 1.5;
+    outline: none;
+    overflow: hidden;
+    padding: 5% 18%;
+    flex:1;
+    position: relative;
+    left: -0%;
+    text-align: center;
+    text-decoration: none;
+    transform: translate3d(0, 0, 0);
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-add:hover {
+    background-color: #1e8449;
+    opacity: 1;
+    transform: translateY(0);
+    transition-duration: .35s;
+  }
+  
+  .button-add:active {
+    transform: translateY(2px);
+    transition-duration: .35s;
+  }
+  
+  .button-add:hover {
+    box-shadow: rgba(39, 174, 96, .2) 0 6px 12px;
+  }
+
+  
+  .footer {
+   
+    position: absolute;
+    text-align: center;
+    padding: 15px;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: #b9b9b9;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+
+  
+  }
