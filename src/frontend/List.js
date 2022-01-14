@@ -15,7 +15,7 @@ export default  class RecordList extends Component {
     
     test(e) {
       
-      axios.get('http://localhost/scandiweb-test/src/backend/delete.php?id='+this.props.obj.d_sku)
+      axios.get('https://nastase-valentin.000webhostapp.com/delete.php?id='+this.props.obj.d_sku)
         .then(console.log('Deleted'))
         .catch(err => console.log(err))
       

@@ -26,7 +26,7 @@ import RecordList,{validate}  from './List';
 
 
     componentDidMount() {
-        axios.get('http://localhost/scandiweb-test/src/backend/list.php')
+        axios.get('https://nastase-valentin.000webhostapp.com/list.php')
         .then(response => {
             this.setState({ products: response.data});
         })
@@ -51,7 +51,7 @@ import RecordList,{validate}  from './List';
     }
 
     click() {
-        axios.get('http://localhost/scandiweb-test/src/backend/mass_delete.php')
+        axios.get('https://nastase-valentin.000webhostapp.com/mass_delete.php')
         .then(console.log('Mass Deleted'))
         .catch(err => console.log(err))
     }
@@ -63,10 +63,10 @@ import RecordList,{validate}  from './List';
 
                 <h3 className = 'title'>Product List</h3>
             
-
+                <div className= "button_position">
                 <button class="button-add" role="button" onClick={() => this.nextPath('/add_product') }>ADD</button>
                 <button class="button-delete" role="button" id="btn" onClick = {this.click}  >MASS DELETE</button>
-
+                </div>
                 
                 <div className = 'test'></div>
                 
