@@ -117,18 +117,10 @@ onSubmit(e) {
     }
 
   //clear the form  
-  const requestOptions = {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ obj})
-    };
-    fetch('https://nastase-valentin.000webhostapp.com/insert.php', requestOptions)
-        .then(response => response.json())
-        .then(data => this.setState({ postId: data.id }));
 
 
- /* axios.post("https://nastase-valentin.000webhostapp.com/insert.php" ,obj) 
-  .then(res => console.log(res.data)); */
+  axios.post("https://nastase-valentin.000webhostapp.com/insert.php" ,obj) 
+  .then(res => console.log(res.data)); 
  
  this.setState(defaultState);
 
@@ -198,6 +190,7 @@ onSubmit(e) {
                 </div>
                 <a class= "a_style" onClick={() => this.nextPath('/product_list')}>Go to Product List</a>
           <div className = 'header'></div>
+          
           <h1 className="title_add">Add Product</h1>
 
           <div className = 'input_position'> 

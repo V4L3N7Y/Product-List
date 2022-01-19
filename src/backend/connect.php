@@ -1,8 +1,8 @@
 <?php
 //database 
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'http://192.168.1.234:8080');
 define('DB_USER', 'root');
-define('DB_PASS', '');
+define('DB_PASS', 'root');
 define('DB_NAME', 'scandiweb');
 
 

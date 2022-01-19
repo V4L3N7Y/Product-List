@@ -45,10 +45,10 @@ body{
 
 .header{
 
-    border: 3.8px solid;
+    border-style: solid;
     border-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0)) 1;
     width: 80%;
-    position: absolute;
+    position:absolute;
     padding-top: auto;
     margin-left: auto;
     margin-right: auto;

@@ -2,7 +2,7 @@ import axios from 'axios';
 import '../scss_files/product_list_style.scss';
 import '../scss_files/responsive_product_list.scss';
 import React,{ useRef } from 'react';
-import {withRouter} from 'react-router-dom';
+import {withRouter,Redirect} from 'react-router-dom';
 import { Component } from 'react';
 //import '../scss_files/input_style.scss';
 import RecordList,{validate}  from './List';
@@ -15,7 +15,11 @@ import RecordList,{validate}  from './List';
 
     constructor(props) {
         super(props);
-        this.state = {products: []};
+        this.state = {
+            products: [],
+            redirect: false
+        };
+       
       //  this.validate = this.validate.bind(this);
       //  this.remember = React.createRef();
         
@@ -52,11 +56,17 @@ import RecordList,{validate}  from './List';
 
     click() {
         axios.get('https://nastase-valentin.000webhostapp.com/mass_delete.php')
-        .then(console.log('Mass Deleted'))
+        .then(this.setState({ redirect: true}))
         .catch(err => console.log(err))
     }
 
     render() {
+
+        const { redirect } = this.state;
+
+        if (redirect) {
+            return <Redirect to='/product_list'/>;
+        }
     
         return (
             <div className='body_style'>
@@ -68,10 +78,10 @@ import RecordList,{validate}  from './List';
                 <button class="button-delete" role="button" id="btn" onClick = {this.click}  >MASS DELETE</button>
                 </div>
                 
-                <div className = 'test'></div>
+                <div className = 'header'></div>
                 
                 <table className = "table-page" >
-                    <tbody className = 'test2'>
+                    <tbody className = 'tbody_style'>
                         
                      {this.usersList()}
 

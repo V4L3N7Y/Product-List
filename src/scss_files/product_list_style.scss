@@ -125,7 +125,7 @@
     text-align: center;
 }
 
-.test{
+.header{
 
   border-style: solid;
   border-image: linear-gradient(to right, rgba(0, 0, 0, 0.445), rgba(0, 0, 0, 0)) 1;
@@ -149,7 +149,7 @@
     width: 10rem;
     height: 10rem;
     background-color: rgb(255, 255, 240);
-    padding: 20px 20px 20px; 
+    padding: 20px 2px 20px; 
     table-layout: fixed;
     border-left: none;
     border-bottom: none;
@@ -163,6 +163,7 @@
 
 .table-page {
  
+  display: table-cell;
   top: 56%;
   left: 50%;
   transform: translate(-50% , -50%);
@@ -175,11 +176,12 @@
  
 }
 
-.test2{
+.tbody_style{
  
  // border-radius: 1em;
   padding: 1em;
   position: absolute;
+   width: 100%;
  // top: 10rem;
  // left: 50%;
 //  margin-right: -50%;
@@ -188,11 +190,13 @@
   border-left: none;
   border-right: none;
   grid-template-columns: 150px 150px 150px 
-  150px 150px 150px 150px;
+                         150px 150px 150px;
   display: grid;
   grid-gap: 24px;
   justify-content: space-evenly;
 }
+
+
 .delete {
   
     position: relative;
@@ -202,12 +206,12 @@
     border: none;
     border-radius: 10px;
     color: white;
-    padding: 5px 8px;
+    padding: 4px 8px 6px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 15px;
-    margin: 2px 2px;
+    margin: 2px 8px;
     cursor: pointer;
     font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
   
